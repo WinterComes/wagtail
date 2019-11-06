@@ -168,7 +168,7 @@ class TestFilesDeletedForCustomModels(TestFilesDeletedForDefaultModels):
         self.assertEqual('%s.%s' % (cls._meta.app_label, cls.__name__), 'tests.CustomDocument')
 
 
-class TestGetImageModel(WagtailTestUtils, TestCase):
+class TestGetDocumentModel(WagtailTestUtils, TestCase):
     @override_settings(WAGTAILDOCS_DOCUMENT_MODEL='tests.CustomDocument')
     def test_custom_get_document_model(self):
         """Test get_document_model with a custom document model"""

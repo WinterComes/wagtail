@@ -66,4 +66,4 @@ Referring to the document model
 
 .. autofunction:: get_document_model
 
-.. autofunction:: get_image_model_string
+.. autofunction:: get_document_model_string

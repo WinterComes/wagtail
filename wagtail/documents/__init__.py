@@ -8,7 +8,7 @@ def get_document_model_string():
     """
     Get the dotted ``app.Model`` name for the document model as a string.
     Useful for developers making Wagtail plugins that need to refer to the
-    image model, such as in foreign keys, but the model itself is not required.
+    document model, such as in foreign keys, but the model itself is not required.
     """
     return getattr(settings, 'WAGTAILDOCS_DOCUMENT_MODEL', 'wagtaildocs.Document')
 
